@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Template</title>
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<table width="100%" height="100%" border="0">
+    <tr>
+        <td height="30px"></td>
+        <td rowspan="3" width="250px" id="right-menu">
+            <div id="user-info" class="well">
+                <a href="#" class="thumbnail" id="user-photo">
+                    <img src="http://placehold.it/60x60" alt="">
+                </a>
+
+                <div class="p-data">
+                    <div id="user-name">Иван</div>
+                    <div id="user-lastname">Иванов</div>
+                    <div id="user-department">Информационные системы</div>
+                </div>
+                <hr style="width: 100%; margin-top: 80px">
+                <div class="free-days">
+                    <div id="free-days-count">
+                        10
+                    </div>
+                    <div id="free-days-label">
+                        Свободных дней
+                    </div>
+                </div>
+                <hr>
+                <div class="plain-days">
+                    7
+                </div>
+                <div class="plain-days-label">
+                    Запланировано
+                </div>
+                <hr>
+            </div>
+            <div class="well" style="padding: 8px 0;" id="user-list">
+                <input type="text" class="find-user" style="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source="[&quot;Alabama&quot;,&quot;Alaska&quot;,&quot;Arizona&quot;,&quot;Arkansas&quot;,&quot;California&quot;,&quot;Colorado&quot;,&quot;Connecticut&quot;,&quot;Delaware&quot;,&quot;Florida&quot;,&quot;Georgia&quot;,&quot;Hawaii&quot;,&quot;Idaho&quot;,&quot;Illinois&quot;,&quot;Indiana&quot;,&quot;Iowa&quot;,&quot;Kansas&quot;,&quot;Kentucky&quot;,&quot;Louisiana&quot;,&quot;Maine&quot;,&quot;Maryland&quot;,&quot;Massachusetts&quot;,&quot;Michigan&quot;,&quot;Minnesota&quot;,&quot;Mississippi&quot;,&quot;Missouri&quot;,&quot;Montana&quot;,&quot;Nebraska&quot;,&quot;Nevada&quot;,&quot;New Hampshire&quot;,&quot;New Jersey&quot;,&quot;New Mexico&quot;,&quot;New York&quot;,&quot;North Dakota&quot;,&quot;North Carolina&quot;,&quot;Ohio&quot;,&quot;Oklahoma&quot;,&quot;Oregon&quot;,&quot;Pennsylvania&quot;,&quot;Rhode Island&quot;,&quot;South Carolina&quot;,&quot;South Dakota&quot;,&quot;Tennessee&quot;,&quot;Texas&quot;,&quot;Utah&quot;,&quot;Vermont&quot;,&quot;Virginia&quot;,&quot;Washington&quot;,&quot;West Virginia&quot;,&quot;Wisconsin&quot;,&quot;Wyoming&quot;]">
+                <ul class="nav nav-list">
+                    <li class="nav-header">отдел 1</li>
+                    <li class="active"><a href="#"><i class="icon-white icon-home"></i> Home</a></li>
+                    <li><a href="#"><i class="icon-user"></i> Иванов Иван</a></li>
+                    <li><a href="#"><i class="icon-user"></i> Иванов Иван</a></li>
+                    <li><a href="#"><i class="icon-user"></i> Иванов Иван</a></li>
+                    <li><a href="#"><i class="icon-user"></i> Иванов Иван</a></li>
+                    <li><a href="#"><i class="icon-user"></i> Иванов Иван</a></li>
+                    <li class="nav-header">отдел 1</li>
+                    <li><a href="#"><i class="icon-user"></i> Иванов Иван</a></li>
+                    <li><a href="#"><i class="icon-user"></i> Иванов Иван</a></li>
+                    <li><a href="#"><i class="icon-user"></i> Иванов Иван</a></li>
+                    <li><a href="#"><i class="icon-user"></i> Иванов Иван</a></li>
+                    <li><a href="#"><i class="icon-user"></i> Иванов Иван</a></li>
+                    <li class="nav-header">отдел 3</li>
+                    <li><a href="#"><i class="icon-user"></i> Иванов Иван</a></li>
+                    <li><a href="#"><i class="icon-user"></i> Иванов Иван</a></li>
+                    <li><a href="#"><i class="icon-user"></i> Иванов Иван</a></li>
+                    <li><a href="#"><i class="icon-user"></i> Иванов Иван</a></li>
+                    <li><a href="#"><i class="icon-user"></i> Иванов Иван</a></li>
+                </ul>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td height="50px">
+            <div id="content-menu">
+                <a class="btn" href="#">
+                    <i class=" icon-calendar"></i>
+                    Сегодня
+                </a>
+                <a class="btn" href="#"><i class="icon-chevron-left"></i></a>
+                <a class="btn" href="#"><i class="icon-chevron-right"></i></a>
+
+                <div style="float: right;">
+                    <a class="btn" href="#" id="add-vacation">
+                        <i class=" icon-plus"></i>
+                        Добавить отпуск
+                    </a>
+                    <a class="btn" href="#">
+                        <i class="icon-th-large"></i>
+                        Год
+                    </a>
+                    <a class="btn" href="#">
+                        <i class="icon-th"></i>
+                        Месяц
+                    </a>
+                </div>
+            </div>
+
+        </td>
+    </tr>
+    <tr>
+        <td id="content">
+            <table id="calendar-month" border="1">
+                <tr>
+                    <td class="month-cell">
+                        <div class="month-name">Январь</div>
+                    </td>
+                    <td class="month-cell">
+                        <div class="month-name">Февраль</div>
+                    </td>
+                    <td class="month-cell">
+                        <div class="month-name">Март</div>
+                    </td>
+                    <td class="month-cell">
+                        <div class="month-name">Апрель</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="month-cell">
+                        <div class="month-name">Май</div>
+                    </td>
+                    <td class="month-cell">
+                        <div class="month-name">Июнь</div>
+                    </td>
+                    <td class="month-cell">
+                        <div class="month-name">Июль</div>
+                    </td>
+                    <td class="month-cell">
+                        <div class="month-name">Август</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="month-cell">
+                        <div class="month-name">Сентябрь</div>
+                    </td>
+                    <td class="month-cell">
+                        <div class="month-name">Октябрь</div>
+                    </td>
+                    <td class="month-cell">
+                        <div class="month-name">Ноябрь</div>
+                    </td>
+                    <td class="month-cell">
+                        <div class="month-name">Декабрь</div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<!-- Modals window-->
+<div id="myModal" class="modal hide fade" style="display: none; ">
+    <div class="modal-header">
+        <button class="close" data-dismiss="modal">×</button>
+        <h3>Добавить отпуск</h3>
+    </div>
+    <div class="modal-body">
+        <h4>Text in a modal</h4>
+        <hr>
+    </div>
+    <div class="modal-footer">
+        <a href="#" class="btn" data-dismiss="modal">Отмена</a>
+        <a href="#" class="btn btn-primary">Сохранить</a>
+    </div>
+</div>
+</body>
+</html>
